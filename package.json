@@ -1,0 +1,16 @@
+{
+  "name": "cfop-visual-trainer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CFOP OLL / PLL 全图形化学习器：3D 演示、闯关、测验、每日复习、实战打乱练习",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node tools/test-cube.mjs && node tools/test-practice.mjs && node tools/test-quiz.mjs",
+    "build:data": "node tools/build-data.mjs"
+  },
+  "dependencies": {
+    "@moishy/algsets": "^0.3.3",
+    "three": "^0.169.0"
+  }
+}
