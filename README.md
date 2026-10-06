@@ -2,7 +2,20 @@
 
 一个纯前端（three.js）的 CFOP 公式学习器：**公式全部用图形表示，不出现任何 `R`、`R'`、`U2` 之类的字母记号**。
 
-## 启动
+## 🌐 在线访问（GitHub Pages）
+
+> 开启 Pages 后地址为：**https://shianliu.github.io/CFOP-learn/**
+
+开启方式（只需一次）：仓库 **Settings → Pages → Build and deployment**
+- Source 选 **Deploy from a branch**
+- Branch 选 **`main`** ，目录选 **`/ (root)`**，Save
+- 等约 1 分钟即可访问
+
+本项目是纯静态站点（无构建步骤）：`index.html` + `src/` + `vendor/`（three.js 已本地化），
+仓库根目录的 `.nojekyll` 用来关闭 Jekyll 处理。所有资源引用都是相对路径，因此在
+`/CFOP-learn/` 这种子路径下也能正常工作。
+
+## 本地启动
 
 ```bash
 npm install          # 只有重新生成公式数据 / 跑测试才需要
